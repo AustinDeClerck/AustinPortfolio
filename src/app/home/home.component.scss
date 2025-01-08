@@ -1,0 +1,19 @@
+//content area
+.content {
+
+    .blur-card {
+        backdrop-filter: blur(1000px);
+    }
+
+    div {
+        button {
+            background-color: #f5f5f5;
+            color: #1b1b1b;
+
+            &:hover {
+                background-color: transparent;
+                color: #f5f5f5;
+            }
+        }
+    }
+}
