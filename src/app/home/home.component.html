@@ -2,7 +2,19 @@
     <div class="mobile-column gap-x-12 z-0 flex h-full w-full p-8 xl:p-32 lg:p-24 md:p-16 sm:p-12 !pt-0 md:!pt-16 sm:!pt-16">
         <!-- Featured Project -->
         <div class="flex-1">
-            <img class="size-full rounded-2xl" src="OOAK.jpeg">
+            <div class="text-center">
+                <h2 class="text-5xl mb-4">{{featuredProject.name}}</h2>
+                <carousel>
+                    <div>
+                        @for (picture of featuredProject.pictures; track $index) {
+                            <slide><img class="block w-full" src={{picture}} alt="slide"></slide>
+                        }
+                    </div>
+                </carousel>
+
+                <p class="mt-2">{{featuredProject.summary}}</p>
+                <p>Visit the Portfolio section to learn more!</p>
+            </div>
         </div>
         <!-- Short About -->
         <div class="blur-card flex-1 self-center items-center border-2 border-[#F5F5F5]/[.10] rounded-2xl p-8">
