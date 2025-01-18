@@ -14,6 +14,19 @@
     }
 }
 
+carousel::ng-deep.carousel-inner {
+        border-radius: 10px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+carousel::ng-deep.icon-next, carousel::ng-deep.icon-prev {
+    fill: none;
+    stroke: #646464;
+    stroke-width: 1px;
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
+}
+
 @media all and (max-width: 1400px) {
     .content {
         .mobile-column {

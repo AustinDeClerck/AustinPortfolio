@@ -5,9 +5,9 @@
         <button class="btn btn-primary bg-blueviolet" (click)="OpenProjectModal()">View More</button>
     </div>
     <div class="card-footer">
-        <div class="d-flex flex-wrap justify-content-center">
+        <div class="flex justify-center">
             @for (tag of project.tags; track $index) {
-                <div class="tag me-2 mb-1" [style.background-color]=tag.color>{{tag}}</div>
+                <div class="tag ms-2 me-2 mb-1" [style.background-color]=tag.color>{{tag}}</div>
             }
         </div>
     </div>

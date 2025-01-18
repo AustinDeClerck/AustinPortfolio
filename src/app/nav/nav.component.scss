@@ -18,7 +18,7 @@ header {
         transition: all .4s ease-in;
 
         &:hover, &.active {
-            border-bottom: 1px solid var(--bcolor);
+            border-bottom: 1px solid var(#f5f5f5);
         }
     }
 
