@@ -1,0 +1,12 @@
+.collapse::ng-deep {
+    visibility:unset !important;
+}
+
+accordion-group::ng-deep .btn-link {
+    font-size: x-large;
+    font-variant: small-caps;
+    font-weight: 500;
+    padding: 10px !important;
+    text-decoration: none !important;
+    color: blueviolet;   
+}

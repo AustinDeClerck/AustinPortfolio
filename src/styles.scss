@@ -27,10 +27,19 @@ body {
     font-size: 14px;
     line-height: 30px;
     border-radius: 25px;
-    background-color: blueviolet;
+    background-color: #8a2be2;
     color: white;
 }
 
 .collapse.show {
     visibility: visible;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 30px;
 }
