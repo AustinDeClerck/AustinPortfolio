@@ -14,11 +14,17 @@ export class ResumeComponent {
 
   }
 
+  isSummaryOpen: boolean = false;
+  isWorkExperienceOpen: boolean = false;
+  isCertificationsOpen: boolean = false;
+  isTechSkillsOpen: boolean = false;
+  isSoftSkillsOpen: boolean = false;
+
   DownloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'Resume.pdf');
-    link.setAttribute('download', 'Resume.pdf');
+    link.setAttribute('href', 'Software Enginneer - Resume (Austin De Clerck).pdf');
+    link.setAttribute('download', 'Software Enginneer - Resume (Austin De Clerck).pdf');
     link.click();
     link.remove();
   }

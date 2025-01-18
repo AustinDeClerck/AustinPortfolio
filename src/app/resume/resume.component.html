@@ -3,14 +3,38 @@
 
     <div class="pb-2">
         <accordion [isAnimated]="true" class="shadow">
-            <accordion-group heading="Summary">
+            <accordion-group [(isOpen)]="isSummaryOpen">
+                <button class="flex flex-row justify-between w-full items-center p-1 px-3" accordion-heading>
+                    <div class="invisible">></div>
+                    <h2>Summary</h2>
+                    <div style="width: 10.95px;">
+                        @if (!isSummaryOpen) {
+                            <div class="text-black">></div>
+                        }
+                        @if (isSummaryOpen) {
+                            <div class="text-black">v</div>
+                        }
+                    </div>
+                </button>
                 <p class="p-2">Front-End Engineer with 4+ years of experience in developing responsive user interfaces using modern JavaScript frameworks like
                     React and Angular, eager to learn Ember.js. Proficient in TypeScript, HTML, CSS, and Sass, with a strong focus on creating accessible
                     and user-centric designs. Experienced in agile methodologies, cross-functional collaboration, and DevOps practices, including CI/CD
                     pipelines. Passionate about applying my skills to build and maintain large-scale web applications for CrowdStrike's cybersecurity
                     mission, with a keen interest in contributing to stopping breaches.</p>
             </accordion-group>
-            <accordion-group heading="Work Experience">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="flex flex-row justify-between w-full items-center p-1 px-3" accordion-heading>
+                    <div class="invisible">></div>
+                    <h2>Work Experience</h2>
+                    <div style="width: 10.95px;">
+                        @if (!isWorkExperienceOpen) {
+                            <div class="text-black">></div>
+                        }
+                        @if (isWorkExperienceOpen) {
+                            <div class="text-black">v</div>
+                        }
+                    </div>
+                </button>
                 <div>
                     <div class="flex flex-row justify-between mb-4 ml-2">
                         <h2 class="text-2xl font-semibold">Crew Member | Trader Joe's</h2>
@@ -70,7 +94,19 @@
                     </ul>
                 </div>
             </accordion-group>
-            <accordion-group heading="Certifications">
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="flex flex-row justify-between w-full items-center p-1 px-3" accordion-heading>
+                    <div class="invisible">></div>
+                    <h2>Certifications</h2>
+                    <div style="width: 10.95px;">
+                        @if (!isCertificationsOpen) {
+                            <div class="text-black">></div>
+                        }
+                        @if (isCertificationsOpen) {
+                            <div class="text-black">v</div>
+                        }
+                    </div>
+                </button>
                 <div class="flex flex-row justify-between mb-4 ml-2">
                     <h2 class="text-2xl font-semibold">C# and .NET Essential Training | LinkedIn</h2>
                     <h3 class="text-lg">March 7th 2024</h3>
@@ -84,14 +120,38 @@
                     <h3 class="text-lg">March 5th 2024</h3>
                 </div>
             </accordion-group>
-            <accordion-group heading="Technical Skills">
+            <accordion-group [(isOpen)]="isTechSkillsOpen">
+                <button class="flex flex-row justify-between w-full items-center p-1 px-3" accordion-heading>
+                    <div class="invisible">></div>
+                    <h2>Technical Skills</h2>
+                    <div style="width: 10.95px;">
+                        @if (!isTechSkillsOpen) {
+                            <div class="text-black">></div>
+                        }
+                        @if (isTechSkillsOpen) {
+                            <div class="text-black">v</div>
+                        }
+                    </div>
+                </button>
                 <div class="text-lg p-2">
                     Angular CLI &nbsp;|&nbsp; React &nbsp;|&nbsp; Vue &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp; TypeScript &nbsp;|&nbsp; Docker &nbsp;|&nbsp; Webpack &nbsp;|&nbsp; Jenkins &nbsp;|&nbsp; Artifactory &nbsp;|&nbsp; AWS &nbsp;|&nbsp; CSS3 &nbsp;|&nbsp; Tailwind CSS &nbsp;|&nbsp; CI/CD &nbsp;|&nbsp; 
                     DevOps &nbsp;|&nbsp; Python &nbsp;|&nbsp; C# &nbsp;|&nbsp; Responsive Design &nbsp;|&nbsp; Git &nbsp;|&nbsp; Agile/Scrum &nbsp;|&nbsp; REST APIs &nbsp;|&nbsp; Cross-browser Compatibility &nbsp;|&nbsp; Performance 
                     Optimization &nbsp;|&nbsp; Unit Testing &nbsp;|&nbsp; UI/UX Design Principles &nbsp;|&nbsp; HTML5 &nbsp;|&nbsp; Accessibility (WCAG) 
                 </div>
             </accordion-group>
-            <accordion-group heading="Soft Skills">
+            <accordion-group [(isOpen)]="isSoftSkillsOpen">
+                <button class="flex flex-row justify-between w-full items-center p-1 px-3" accordion-heading>
+                    <div class="invisible">></div>
+                    <h2>Soft Skills</h2>
+                    <div style="width: 10.95px;">
+                        @if (!isSoftSkillsOpen) {
+                            <div class="text-black">></div>
+                        }
+                        @if (isSoftSkillsOpen) {
+                            <div class="text-black">v</div>
+                        }
+                    </div>
+                </button>
                 <div class="text-lg p-2">
                     Process Improvement &nbsp;|&nbsp; Attention to Detail &nbsp;|&nbsp; Written and Verbal Communication &nbsp;|&nbsp; Organization &nbsp;|&nbsp; Flexibility &nbsp;|&nbsp; Interpersonal Skills &nbsp;|&nbsp;
                     Cross-Functional Collaboration &nbsp;|&nbsp; Team Cooperation &nbsp;|&nbsp; Reporting and Budgeting &nbsp;|&nbsp; Data Analysis &nbsp;|&nbsp; Software and Hardware 
