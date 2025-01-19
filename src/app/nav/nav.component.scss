@@ -12,21 +12,22 @@ header {
     }
 
     //to not influence third party links
-    a:not(:has(svg)){
+
+    a.svg{
+        transition: all .4s ease-in-out;
+
+        &:hover, &.active {
+            transform: translateY(-5px);
+        }
+    }
+
+    a.no-svg {
         border-bottom: 1px solid transparent;
         padding-bottom: 4px;
         transition: all .4s ease-in;
 
         &:hover, &.active {
-            border-bottom: 1px solid var(#f5f5f5);
-        }
-    }
-
-    a:has(svg){
-        transition: all .4s ease-in-out;
-
-        &:hover, &.active {
-            transform: translateY(-5px);
+            border-bottom: 1px solid #f5f5f5;
         }
     }
 
