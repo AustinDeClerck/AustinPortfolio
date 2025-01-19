@@ -18,6 +18,6 @@ export class HomeComponent {
   constructor(private projectsService: ProjectsService) {}
 
   ngOnInit(): void {
-    this.featuredProject = this.projectsService.GetProjectById(0);
+    this.featuredProject = this.projectsService.GetProjectById(1);
   }
 }

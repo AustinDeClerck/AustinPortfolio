@@ -1,16 +1,14 @@
 <div class="container">
-    <div class="mb-2">
-        <div>
-            <button class="btn btn-outline-primary mb-2 me-2 ml-12" (click)="isCollapsed = !isCollapsed" >Filter</button>
-        </div>
-
+    <!-- filter -->
+    <div class="mb-2 flex flex-col items-center">
+        <button class="btn btn-outline-primary bg-purple-900 text-[#f5f5f5] border-none mb-2 me-2 max-w-20" (click)="isCollapsed = !isCollapsed" >Filter</button>
         <div [collapse]="isCollapsed" [isAnimated]="true">
             <div class="mb-2">
                 <form>
                     <div class="row mx-0">
                         <div class="flex flex-row">
                             @for (category of categories; track $index) {
-                                <div class="flex flex-col p-3 ms-4">
+                                <div class="flex flex-col p-3">
                                     <h4>{{category}}:</h4>
                                     <div class="form-group">
                                         @for (tag of GetTagsByCategory(category); track $index) {
@@ -33,6 +31,8 @@
             </div>
         </div>
     </div>
+
+    <!-- cards -->
     <div class="flex row items-center justify-center">
         @for (project of projects; track $index) {
             <div class="col-lg-4 col-md-6 mb-4 max-w-md min-w-md">

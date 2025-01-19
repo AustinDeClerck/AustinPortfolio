@@ -1,13 +1,13 @@
-<section class="blur-card card shadow text-center max-w-md min-w-md max-h-60 min-h-60 text-[#f5f5f5]">
+<section class="blur-card card shadow text-center max-w-md min-w-md max-h-72 min-h-72 text-[#f5f5f5]">
     <div class="card-body">
         <h5 class="card-title text-xl">{{project.name}}</h5>
         <p class="card-text mb-3">{{project.summary}}</p>
-        <button class="btn btn-primary bg-blueviolet" (click)="OpenProjectModal()">View More</button>
+        <button class="btn btn-primary bg-purple-900 border-none" (click)="OpenProjectModal()">View More</button>
     </div>
     <div class="card-footer">
-        <div class="flex justify-center">
+        <div class="flex flex-wrap justify-center">
             @for (tag of project.tags; track $index) {
-                <div class="tag ms-2 me-2 mb-1" [style.background-color]=tag.color>{{tag}}</div>
+                <div class="tag ms-1 me-1 mb-1" [style.background-color]=tag.color>{{tag}}</div>
             }
         </div>
     </div>
